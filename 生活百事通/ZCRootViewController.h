@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZCRootViewController.h
 //  生活百事通
 //
 //  Created by 朱立焜 on 15/10/21.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZCRootViewController : UIViewController
 
 @end
-
