@@ -1,0 +1,7 @@
+platform:ios,'7.0'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'AFNetworking'
+pod 'ChameleonFramework'
+pod 'SVProgressHUD', '~>1.1.3'
+pod 'DAPagesContainer', '~>1.0.1'

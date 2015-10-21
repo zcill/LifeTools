@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ZCHeader.h"
 #import "ZCRootViewController.h"
+#import "ZCCustomTabBar.h"
 
 @interface AppDelegate ()
 
@@ -21,13 +23,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UITabBarController *tab = [[UITabBarController alloc] init];
+    ZCCustomTabBar *tab = [[ZCCustomTabBar alloc] init];
     
     UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
     UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
     UINavigationController *navi3 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
+    UINavigationController *navi4 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
     
-    tab.viewControllers = @[navi1, navi2, navi3];
+    tab.viewControllers = @[navi1, navi2, navi3, navi4];
     
     self.window.rootViewController = tab;
     [self.window makeKeyAndVisible];

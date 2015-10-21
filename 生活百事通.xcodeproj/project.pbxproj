@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33C41BD7967F00475586 /* ZCRootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3E05AC1E350C813C53788DBF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CC5733144DC4C456482F5 /* libPods.a */; };
+		4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33C41BD7967F00475586 /* ZCRootViewController.m */; };
+		4C6B33D01BD7B7DB00475586 /* UIButton+ZCQuickCreateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33CC1BD7B7DB00475586 /* UIButton+ZCQuickCreateButton.m */; settings = {ASSET_TAGS = (); }; };
+		4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */; settings = {ASSET_TAGS = (); }; };
+		4C6B33D81BD7BE0400475586 /* ZCCustomNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */; settings = {ASSET_TAGS = (); }; };
 		4CDBCB811BD789B900310898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB801BD789B900310898 /* main.m */; };
 		4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB831BD789B900310898 /* AppDelegate.m */; };
 		4CDBCB8A1BD789B900310898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB881BD789B900310898 /* Main.storyboard */; };
@@ -35,8 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		251DFC58E0597ADDE2A5A462 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4C6B33C31BD7967F00475586 /* ZCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRootViewController.h; sourceTree = "<group>"; };
 		4C6B33C41BD7967F00475586 /* ZCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRootViewController.m; sourceTree = "<group>"; };
+		4C6B33C91BD7B6CD00475586 /* ZCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCHeader.h; path = "生活百事通/ZCHeader.h"; sourceTree = "<group>"; };
+		4C6B33CB1BD7B7DB00475586 /* UIButton+ZCQuickCreateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZCQuickCreateButton.h"; sourceTree = "<group>"; };
+		4C6B33CC1BD7B7DB00475586 /* UIButton+ZCQuickCreateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZCQuickCreateButton.m"; sourceTree = "<group>"; };
+		4C6B33CD1BD7B7DB00475586 /* ZCQuickCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCQuickCreate.h; sourceTree = "<group>"; };
+		4C6B33D31BD7BA0F00475586 /* ZCCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCustomTabBar.h; sourceTree = "<group>"; };
+		4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCustomTabBar.m; sourceTree = "<group>"; };
+		4C6B33D61BD7BE0400475586 /* ZCCustomNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCustomNavigation.h; sourceTree = "<group>"; };
+		4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCustomNavigation.m; sourceTree = "<group>"; };
 		4CDBCB7C1BD789B900310898 /* 生活百事通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "生活百事通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDBCB801BD789B900310898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CDBCB821BD789B900310898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +64,8 @@
 		4CDBCBA01BD789B900310898 /* 生活百事通UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "生活百事通UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDBCBA41BD789B900310898 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		4CDBCBA61BD789B900310898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50BADCC76D016601BC8F1E83 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5B4CC5733144DC4C456482F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E05AC1E350C813C53788DBF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BBC348098ABD0B4115D1E38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B4CC5733144DC4C456482F5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C6B33C01BD7963800475586 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +112,8 @@
 		4C6B33C11BD7964500475586 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				4C6B33C91BD7B6CD00475586 /* ZCHeader.h */,
+				4C6B33CA1BD7B7DB00475586 /* ZCQuickCreate */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -114,6 +140,27 @@
 			name = Root;
 			sourceTree = "<group>";
 		};
+		4C6B33CA1BD7B7DB00475586 /* ZCQuickCreate */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B33CB1BD7B7DB00475586 /* UIButton+ZCQuickCreateButton.h */,
+				4C6B33CC1BD7B7DB00475586 /* UIButton+ZCQuickCreateButton.m */,
+				4C6B33CD1BD7B7DB00475586 /* ZCQuickCreate.h */,
+			);
+			path = ZCQuickCreate;
+			sourceTree = "<group>";
+		};
+		4C6B33D21BD7B9C700475586 /* tabBarAndNavi */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B33D31BD7BA0F00475586 /* ZCCustomTabBar.h */,
+				4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */,
+				4C6B33D61BD7BE0400475586 /* ZCCustomNavigation.h */,
+				4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */,
+			);
+			name = tabBarAndNavi;
+			sourceTree = "<group>";
+		};
 		4CDBCB731BD789B900310898 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +170,8 @@
 				4CDBCB981BD789B900310898 /* 生活百事通Tests */,
 				4CDBCBA31BD789B900310898 /* 生活百事通UITests */,
 				4CDBCB7D1BD789B900310898 /* Products */,
+				B83FAB201D0ED7AFF513CF95 /* Pods */,
+				2BBC348098ABD0B4115D1E38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				4C6B33C61BD7968700475586 /* Root */,
+				4C6B33D21BD7B9C700475586 /* tabBarAndNavi */,
 				4C6B33C21BD7964B00475586 /* Application */,
 				4CDBCB7F1BD789B900310898 /* Supporting Files */,
 			);
@@ -172,6 +222,15 @@
 			path = "生活百事通UITests";
 			sourceTree = "<group>";
 		};
+		B83FAB201D0ED7AFF513CF95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				251DFC58E0597ADDE2A5A462 /* Pods.debug.xcconfig */,
+				50BADCC76D016601BC8F1E83 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +238,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CDBCBA91BD789B900310898 /* Build configuration list for PBXNativeTarget "生活百事通" */;
 			buildPhases = (
+				5C7D083FD397CD2815C8CEF8 /* Check Pods Manifest.lock */,
 				4CDBCB781BD789B900310898 /* Sources */,
 				4CDBCB791BD789B900310898 /* Frameworks */,
 				4CDBCB7A1BD789B900310898 /* Resources */,
+				E8E58D2DF9C720037D4BB24F /* Embed Pods Frameworks */,
+				80E5B6DD8653DEE4172DEFFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,13 +363,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C7D083FD397CD2815C8CEF8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80E5B6DD8653DEE4172DEFFD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8E58D2DF9C720037D4BB24F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CDBCB781BD789B900310898 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6B33D01BD7B7DB00475586 /* UIButton+ZCQuickCreateButton.m in Sources */,
 				4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */,
 				4CDBCB811BD789B900310898 /* main.m in Sources */,
+				4C6B33D81BD7BE0400475586 /* ZCCustomNavigation.m in Sources */,
+				4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */,
 				4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +560,7 @@
 		};
 		4CDBCBAA1BD789B900310898 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251DFC58E0597ADDE2A5A462 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "生活百事通/Info.plist";
@@ -459,6 +573,7 @@
 		};
 		4CDBCBAB1BD789B900310898 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BADCC76D016601BC8F1E83 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "生活百事通/Info.plist";
