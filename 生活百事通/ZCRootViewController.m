@@ -25,8 +25,8 @@
 
 - (void)initNavigationBar {
     
-    [self.navigationController.navigationBar setBarTintColor:[UIColor flatRedColorDark]];
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor flatWhiteColor]];
+//    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
 }
 
