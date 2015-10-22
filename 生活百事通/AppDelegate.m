@@ -11,6 +11,9 @@
 #import "ZCRootViewController.h"
 #import "ZCCustomTabBar.h"
 #import "ZCCustomNavigation.h"
+#import "ZCMainViewController.h"
+#import "ZCMainCollectionViewController.h"
+#import "CSStickyHeaderFlowLayout.h"
 
 @interface AppDelegate ()
 
@@ -25,13 +28,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     ZCCustomTabBar *tab = [[ZCCustomTabBar alloc] init];
-    
-    ZCCustomNavigation *navi1 = [[ZCCustomNavigation alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
-    UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
-    UINavigationController *navi3 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
-    UINavigationController *navi4 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
-    
-    tab.viewControllers = @[navi1, navi2, navi3, navi4];
     
     self.window.rootViewController = tab;
     [self.window makeKeyAndVisible];

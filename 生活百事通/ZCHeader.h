@@ -37,6 +37,9 @@
 #define GetSystemVersion [[[UIDevice currentDevices] systemVersion] floatValue]
 #define CurrentSystemVersion ([[UIDevice currentDevice] systemVersion])
 
+// 判断是否为iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
+
 // 获取当前语言
 #define CurrentLangage ([[NSLocale preferredLangages] objectAtIndex:0])
 

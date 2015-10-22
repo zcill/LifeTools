@@ -46,7 +46,7 @@
     CGFloat buttonW = 49.f;
     CGFloat buttonH = labelH;
     leftButton.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
-    [leftButton setImage:[UIImage imageNamed:@"icon_homepage_map"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"navigation_locationicon"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(doLocalize:) forControlEvents:UIControlEventTouchUpInside];
     
     [naviView addSubview:leftButton];
@@ -56,8 +56,7 @@
 
 - (void)doLocalize:(UIButton *)button {
     
-    
-    
+
 }
 
 

@@ -9,17 +9,33 @@
 #import "ZCCustomTabBar.h"
 #import "ZCHeader.h"
 #import "UIButton+ZCQuickCreateButton.h"
+#import "CSStickyHeaderFlowLayout.h"
+#import "ZCMainCollectionViewController.h"
+#import "ZCRootViewController.h"
+#import "ZCCustomNavigation.h"
 
 @interface ZCCustomTabBar ()
+
+@property (nonatomic, weak) ZCMainCollectionViewController *main;
 
 @end
 
 @implementation ZCCustomTabBar
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    for (UIView *child in self.tabBar.subviews) {
+        if ([child isKindOfClass:[UIControl class]]) {
+            [child removeFromSuperview];
+        }
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self customTabBar];
+    [self setupAllSubViewControllers];
 }
 
 #pragma mark - 定制TabBar
@@ -94,5 +110,46 @@
     }
 }
 
+#pragma mark - 初始化所有子控制器
+- (void)setupAllSubViewControllers {
+    
+#warning ZCMainCollectionController必须要初始化flowLayout，否则crash
+    
+    // 使用第三方库的FlowLayout来创建布局
+//    CSStickyHeaderFlowLayout *layout = [[CSStickyHeaderFlowLayout alloc] init];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize = CGSizeMake(80, 80);
+    // 设置水平间距
+    layout.minimumInteritemSpacing = 0;
+    // 设置垂直间距
+    layout.minimumLineSpacing = 10;
+    layout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0);
+//    layout.parallaxHeaderReferenceSize = CGSizeMake(ScreenWidth, 170);
+    layout.headerReferenceSize = CGSizeMake(200, 50);
+    
+    ZCMainCollectionViewController *main = [[ZCMainCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    [self addChildViewController:main title:nil];
+    self.main = main;
+    
+    ZCRootViewController *navi2 = [[ZCRootViewController alloc] init];
+    [self addChildViewController:navi2 title:nil];
+    
+    ZCRootViewController *navi3 = [[ZCRootViewController alloc] init];
+    [self addChildViewController:navi3 title:nil];
+    
+    ZCRootViewController *navi4 = [[ZCRootViewController alloc] init];
+    [self addChildViewController:navi4 title:nil];
+    
+}
+
+- (void)addChildViewController:(UIViewController *)childController title:(NSString *)title {
+    
+    childController.title = title;
+    
+    ZCCustomNavigation *navi = [[ZCCustomNavigation alloc] initWithRootViewController:childController];
+    [self addChildViewController:navi];
+    
+    
+}
 
 @end
