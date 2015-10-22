@@ -10,6 +10,7 @@
 #import "ZCHeader.h"
 #import "ZCRootViewController.h"
 #import "ZCCustomTabBar.h"
+#import "ZCCustomNavigation.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +26,7 @@
     
     ZCCustomTabBar *tab = [[ZCCustomTabBar alloc] init];
     
-    UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
+    ZCCustomNavigation *navi1 = [[ZCCustomNavigation alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
     UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
     UINavigationController *navi3 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];
     UINavigationController *navi4 = [[UINavigationController alloc] initWithRootViewController:[[ZCRootViewController alloc] init]];

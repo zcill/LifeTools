@@ -7,6 +7,7 @@
 //
 
 #import "ZCCustomNavigation.h"
+#import "ZCHeader.h"
 
 @interface ZCCustomNavigation ()
 
@@ -16,22 +17,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self initNavigation];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initNavigation {
+    
+    // 隐藏系统navigationBar
+    self.navigationBar.hidden = YES;
+    
+    UIView *naviView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 64)];
+    naviView.backgroundColor = [UIColor flatWhiteColor];
+    
+    // 设置titleLabel
+    CGFloat labelX = ScreenWidth / 3;
+    CGFloat labelY = CGRectGetHeight(naviView.frame) / 2 - 5;
+    CGFloat labelW = ScreenWidth / 3;
+    CGFloat labelH = CGRectGetHeight(naviView.frame) / 2;
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(labelX, labelY, labelW, labelH)];
+    titleLabel.text = @"生活";
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    [naviView addSubview:titleLabel];
+    
+    // 设置定位按钮
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    CGFloat buttonX = 5.f;
+    CGFloat buttonY = labelY;
+    CGFloat buttonW = 49.f;
+    CGFloat buttonH = labelH;
+    leftButton.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
+    [leftButton setImage:[UIImage imageNamed:@"icon_homepage_map"] forState:UIControlStateNormal];
+    [leftButton addTarget:self action:@selector(doLocalize:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [naviView addSubview:leftButton];
+    
+    [self.view addSubview:naviView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)doLocalize:(UIButton *)button {
+    
+    
+    
 }
-*/
+
 
 @end

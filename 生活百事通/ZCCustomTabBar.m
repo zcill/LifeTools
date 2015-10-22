@@ -8,7 +8,7 @@
 
 #import "ZCCustomTabBar.h"
 #import "ZCHeader.h"
-#import "ZCQuickCreate.h"
+#import "UIButton+ZCQuickCreateButton.h"
 
 @interface ZCCustomTabBar ()
 
