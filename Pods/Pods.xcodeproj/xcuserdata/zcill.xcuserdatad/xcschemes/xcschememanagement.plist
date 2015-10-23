@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +57,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CAA1FCF3911FE3EC9C6B49D9FB9AB22</key>
+		<key>878D06D80B75F294E58B74EE9FD9C1BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CB624CC4C9786CAB550AFF9C5A7408C9</key>
+		<key>B23B3D15FFC0FC9893968F478086D58D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF0BE3EA8600118F50B229FD5CD41959</key>
+		<key>E95636E552598BA6A9C9D3F6D4AFC97E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EDAC9C4CA2805A2147D37F029541DF87</key>
 		<dict>
 			<key>primary</key>
 			<true/>

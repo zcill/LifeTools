@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class ZCWeatherModel;
+
 @interface ZCMainCollectionViewController : UICollectionViewController
+
+@property (nonatomic, strong) ZCWeatherModel *weatherModel;
 
 @end

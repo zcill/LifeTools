@@ -65,7 +65,7 @@
         
         // 设置frame
         CGFloat itemLength = ScreenWidth / 4;
-        NSLog(@"itemLength:%f",itemLength);
+//        NSLog(@"itemLength:%f",itemLength);
         
         button.frame = CGRectMake(itemLength * i, 0, itemLength, TabBarHeight);
         
@@ -116,15 +116,15 @@
 #warning ZCMainCollectionController必须要初始化flowLayout，否则crash
     
     // 使用第三方库的FlowLayout来创建布局
-//    CSStickyHeaderFlowLayout *layout = [[CSStickyHeaderFlowLayout alloc] init];
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    CSStickyHeaderFlowLayout *layout = [[CSStickyHeaderFlowLayout alloc] init];
+//    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.itemSize = CGSizeMake(80, 80);
     // 设置水平间距
     layout.minimumInteritemSpacing = 0;
     // 设置垂直间距
     layout.minimumLineSpacing = 10;
     layout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0);
-//    layout.parallaxHeaderReferenceSize = CGSizeMake(ScreenWidth, 170);
+    layout.parallaxHeaderReferenceSize = CGSizeMake(ScreenWidth, 170);
     layout.headerReferenceSize = CGSizeMake(200, 50);
     
     ZCMainCollectionViewController *main = [[ZCMainCollectionViewController alloc] initWithCollectionViewLayout:layout];

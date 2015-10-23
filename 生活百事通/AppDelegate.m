@@ -11,7 +11,6 @@
 #import "ZCRootViewController.h"
 #import "ZCCustomTabBar.h"
 #import "ZCCustomNavigation.h"
-#import "ZCMainViewController.h"
 #import "ZCMainCollectionViewController.h"
 #import "CSStickyHeaderFlowLayout.h"
 

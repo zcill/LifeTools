@@ -16,6 +16,9 @@
 #import <AFNetworking/AFNetworking.h>
 // 图片缓存
 #import <SDWebImage/UIImageView+WebCache.h>
+// 字典转模型
+#import <MJExtension/MJExtension.h>
+
 
 #pragma mark ----------- 尺寸宏
 // 状态栏高度

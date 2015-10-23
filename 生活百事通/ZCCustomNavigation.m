@@ -47,16 +47,18 @@
     CGFloat buttonH = labelH;
     leftButton.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
     [leftButton setImage:[UIImage imageNamed:@"navigation_locationicon"] forState:UIControlStateNormal];
-    [leftButton addTarget:self action:@selector(doLocalize:) forControlEvents:UIControlEventTouchUpInside];
+    [leftButton addTarget:self action:@selector(selectCity:) forControlEvents:UIControlEventTouchUpInside];
     
     [naviView addSubview:leftButton];
     
     [self.view addSubview:naviView];
 }
 
-- (void)doLocalize:(UIButton *)button {
+// 选择城市
+- (void)selectCity:(UIButton *)button {
     
-
+#warning 未实现选择城市的功能
+    
 }
 
 

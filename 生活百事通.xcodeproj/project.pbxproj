@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3E05AC1E350C813C53788DBF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CC5733144DC4C456482F5 /* libPods.a */; };
+		4C3631871BDA566D0010C0CC /* ZCHttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */; settings = {ASSET_TAGS = (); }; };
+		4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631891BDA5ECC0010C0CC /* ZCSearchHttpRequest.m */; settings = {ASSET_TAGS = (); }; };
 		4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33C41BD7967F00475586 /* ZCRootViewController.m */; };
 		4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */; settings = {ASSET_TAGS = (); }; };
 		4C6B33D81BD7BE0400475586 /* ZCCustomNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */; settings = {ASSET_TAGS = (); }; };
 		4C6B33DB1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */; settings = {ASSET_TAGS = (); }; };
+		4CB141651BDA24E40060F5A5 /* ZCWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */; settings = {ASSET_TAGS = (); }; };
 		4CDBCB811BD789B900310898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB801BD789B900310898 /* main.m */; };
 		4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB831BD789B900310898 /* AppDelegate.m */; };
 		4CDBCB8A1BD789B900310898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB881BD789B900310898 /* Main.storyboard */; };
 		4CDBCB8F1BD789B900310898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB8D1BD789B900310898 /* LaunchScreen.storyboard */; };
 		4CDBCB9A1BD789B900310898 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB991BD789B900310898 /* _____Tests.m */; };
 		4CDBCBA51BD789B900310898 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCBA41BD789B900310898 /* _____UITests.m */; };
-		4CF8DB3A1BD87065006853CB /* ZCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB391BD87065006853CB /* ZCMainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4CF8DB3D1BD886D0006853CB /* ZCMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4CF8DB411BD88949006853CB /* ZCWeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB3F1BD88949006853CB /* ZCWeatherCell.m */; settings = {ASSET_TAGS = (); }; };
 		4CF8DB421BD88949006853CB /* ZCWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DB401BD88949006853CB /* ZCWeatherCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -52,6 +54,10 @@
 
 /* Begin PBXFileReference section */
 		251DFC58E0597ADDE2A5A462 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3631851BDA566D0010C0CC /* ZCHttpRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCHttpRequestTool.h; path = "生活百事通/ZCHttpRequestTool.h"; sourceTree = "<group>"; };
+		4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCHttpRequestTool.m; path = "生活百事通/ZCHttpRequestTool.m"; sourceTree = "<group>"; };
+		4C3631881BDA5ECC0010C0CC /* ZCSearchHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSearchHttpRequest.h; sourceTree = "<group>"; };
+		4C3631891BDA5ECC0010C0CC /* ZCSearchHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSearchHttpRequest.m; sourceTree = "<group>"; };
 		4C6B33C31BD7967F00475586 /* ZCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRootViewController.h; sourceTree = "<group>"; };
 		4C6B33C41BD7967F00475586 /* ZCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRootViewController.m; sourceTree = "<group>"; };
 		4C6B33C91BD7B6CD00475586 /* ZCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCHeader.h; path = "生活百事通/ZCHeader.h"; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCustomNavigation.m; sourceTree = "<group>"; };
 		4C6B33D91BD7BEE200475586 /* UIButton+ZCQuickCreateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZCQuickCreateButton.h"; sourceTree = "<group>"; };
 		4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZCQuickCreateButton.m"; sourceTree = "<group>"; };
+		4CB141631BDA24E40060F5A5 /* ZCWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWeatherModel.h; sourceTree = "<group>"; };
+		4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWeatherModel.m; sourceTree = "<group>"; };
 		4CDBCB7C1BD789B900310898 /* 生活百事通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "生活百事通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDBCB801BD789B900310898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CDBCB821BD789B900310898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,8 +82,6 @@
 		4CDBCBA01BD789B900310898 /* 生活百事通UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "生活百事通UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDBCBA41BD789B900310898 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		4CDBCBA61BD789B900310898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CF8DB381BD87065006853CB /* ZCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMainViewController.h; sourceTree = "<group>"; };
-		4CF8DB391BD87065006853CB /* ZCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMainViewController.m; sourceTree = "<group>"; };
 		4CF8DB3B1BD886D0006853CB /* ZCMainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMainCollectionViewController.h; sourceTree = "<group>"; };
 		4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMainCollectionViewController.m; sourceTree = "<group>"; };
 		4CF8DB3E1BD88949006853CB /* ZCWeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWeatherCell.h; sourceTree = "<group>"; };
@@ -134,6 +140,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C3631841BDA55B00010C0CC /* Public(公用) */ = {
+			isa = PBXGroup;
+			children = (
+				4C3631881BDA5ECC0010C0CC /* ZCSearchHttpRequest.h */,
+				4C3631891BDA5ECC0010C0CC /* ZCSearchHttpRequest.m */,
+			);
+			name = "Public(公用)";
+			sourceTree = "<group>";
+		};
 		4C6B33C01BD7963800475586 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +163,8 @@
 				4C6B33C91BD7B6CD00475586 /* ZCHeader.h */,
 				4C6B33D91BD7BEE200475586 /* UIButton+ZCQuickCreateButton.h */,
 				4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */,
+				4C3631851BDA566D0010C0CC /* ZCHttpRequestTool.h */,
+				4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -212,7 +229,8 @@
 		4CDBCB7E1BD789B900310898 /* 生活百事通 */ = {
 			isa = PBXGroup;
 			children = (
-				4CF8DB371BD87050006853CB /* Main */,
+				4C3631841BDA55B00010C0CC /* Public(公用) */,
+				4CF8DB371BD87050006853CB /* Main(生活) */,
 				4C6B33C61BD7968700475586 /* Root */,
 				4C6B33D21BD7B9C700475586 /* tabBarAndNavi */,
 				4C6B33C21BD7964B00475586 /* Application */,
@@ -247,21 +265,19 @@
 			path = "生活百事通UITests";
 			sourceTree = "<group>";
 		};
-		4CF8DB371BD87050006853CB /* Main */ = {
+		4CF8DB371BD87050006853CB /* Main(生活) */ = {
 			isa = PBXGroup;
 			children = (
 				4CF8DB541BD8C7BD006853CB /* Model */,
 				4CF8DB531BD8C7AD006853CB /* View */,
 				4CF8DB521BD8C79F006853CB /* Controller */,
 			);
-			name = Main;
+			name = "Main(生活)";
 			sourceTree = "<group>";
 		};
 		4CF8DB521BD8C79F006853CB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4CF8DB381BD87065006853CB /* ZCMainViewController.h */,
-				4CF8DB391BD87065006853CB /* ZCMainViewController.m */,
 				4CF8DB3B1BD886D0006853CB /* ZCMainCollectionViewController.h */,
 				4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */,
 			);
@@ -274,12 +290,12 @@
 				4CF8DB471BD88F1B006853CB /* ZCItemCell.h */,
 				4CF8DB481BD88F1B006853CB /* ZCItemCell.m */,
 				4CF8DB491BD88F1B006853CB /* ZCItemCell.xib */,
-				4CF8DB3E1BD88949006853CB /* ZCWeatherCell.h */,
-				4CF8DB3F1BD88949006853CB /* ZCWeatherCell.m */,
-				4CF8DB401BD88949006853CB /* ZCWeatherCell.xib */,
 				4CF8DB551BD8C81A006853CB /* ZCHeaderViewCell.h */,
 				4CF8DB561BD8C81A006853CB /* ZCHeaderViewCell.m */,
 				4CF8DB571BD8C81A006853CB /* ZCHeaderViewCell.xib */,
+				4CF8DB3E1BD88949006853CB /* ZCWeatherCell.h */,
+				4CF8DB3F1BD88949006853CB /* ZCWeatherCell.m */,
+				4CF8DB401BD88949006853CB /* ZCWeatherCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -291,6 +307,8 @@
 				4CF8DB501BD8B396006853CB /* ZCSectionModel.m */,
 				4CF8DB4C1BD8909C006853CB /* ZCItemModel.h */,
 				4CF8DB4D1BD8909C006853CB /* ZCItemModel.m */,
+				4CB141631BDA24E40060F5A5 /* ZCWeatherModel.h */,
+				4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -504,14 +522,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF8DB3D1BD886D0006853CB /* ZCMainCollectionViewController.m in Sources */,
-				4CF8DB3A1BD87065006853CB /* ZCMainViewController.m in Sources */,
 				4CF8DB601BD8D130006853CB /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
+				4C3631871BDA566D0010C0CC /* ZCHttpRequestTool.m in Sources */,
 				4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */,
 				4CDBCB811BD789B900310898 /* main.m in Sources */,
 				4C6B33D81BD7BE0400475586 /* ZCCustomNavigation.m in Sources */,
+				4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */,
 				4CF8DB4E1BD8909C006853CB /* ZCItemModel.m in Sources */,
 				4CF8DB511BD8B396006853CB /* ZCSectionModel.m in Sources */,
 				4CF8DB5F1BD8D130006853CB /* CSStickyHeaderFlowLayout.m in Sources */,
+				4CB141651BDA24E40060F5A5 /* ZCWeatherModel.m in Sources */,
 				4CF8DB4A1BD88F1B006853CB /* ZCItemCell.m in Sources */,
 				4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */,
 				4CF8DB411BD88949006853CB /* ZCWeatherCell.m in Sources */,
