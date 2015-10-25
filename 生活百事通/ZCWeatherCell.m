@@ -20,7 +20,7 @@
 - (void)setWeatherModel:(ZCWeatherModel *)weatherModel {
     
 //    ZCWeatherData *weatherData = weatherModel.weather_data[0];
-#warning 注意这个地方，如果用的模型的话，无故崩溃，使用字典接收就可以正常运行
+#warning 注意这个地方，如果用的模型的话crash，使用字典接收就可以正常运行
     
     NSDictionary *weatherData = weatherModel.weather_data[0];
     
@@ -38,7 +38,7 @@
     if (strLocation != NSNotFound) {
         weather = [weather substringToIndex:strLocation];
     }
-#warning 未使用category
+#warning UIImage未使用category
     self.weatherImageView.image = [UIImage imageNamed:weather];
     self.weatherLabel.text = weatherData[@"weather"];
 

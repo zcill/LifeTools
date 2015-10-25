@@ -101,6 +101,9 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
         NSLog(@"error:%@", error);
     }];
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:city forKey:@"currentCity"];
+    
 }
 
 
