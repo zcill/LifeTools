@@ -1178,6 +1178,14 @@
 				<key>lon</key>
 				<real>112.77</real>
 			</dict>
+			<dict>
+				<key>city</key>
+				<string>黄冈</string>
+				<key>lat</key>
+				<real>30.46</real>
+				<key>lon</key>
+				<real>114.88</real>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -2143,6 +2151,14 @@
 				<real>35.02</real>
 				<key>lon</key>
 				<real>111</real>
+			</dict>
+			<dict>
+				<key>city</key>
+				<string>长治</string>
+				<key>lat</key>
+				<real>36.2</real>
+				<key>lon</key>
+				<real>113.12</real>
 			</dict>
 		</array>
 	</dict>

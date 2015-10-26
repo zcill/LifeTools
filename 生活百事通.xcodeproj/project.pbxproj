@@ -12,7 +12,6 @@
 		4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631891BDA5ECC0010C0CC /* ZCSearchHttpRequest.m */; settings = {ASSET_TAGS = (); }; };
 		4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33C41BD7967F00475586 /* ZCRootViewController.m */; };
 		4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */; settings = {ASSET_TAGS = (); }; };
-		4C6B33D81BD7BE0400475586 /* ZCCustomNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */; settings = {ASSET_TAGS = (); }; };
 		4C6B33DB1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */; settings = {ASSET_TAGS = (); }; };
 		4C9B47951BDE06CB0030B947 /* ZCCitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B47941BDE06CB0030B947 /* ZCCitiesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4C9B479C1BDE09450030B947 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47961BDE09450030B947 /* Categories.plist */; settings = {ASSET_TAGS = (); }; };
@@ -70,8 +69,6 @@
 		4C6B33C91BD7B6CD00475586 /* ZCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCHeader.h; path = "生活百事通/ZCHeader.h"; sourceTree = "<group>"; };
 		4C6B33D31BD7BA0F00475586 /* ZCCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCustomTabBar.h; sourceTree = "<group>"; };
 		4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCustomTabBar.m; sourceTree = "<group>"; };
-		4C6B33D61BD7BE0400475586 /* ZCCustomNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCustomNavigation.h; sourceTree = "<group>"; };
-		4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCustomNavigation.m; sourceTree = "<group>"; };
 		4C6B33D91BD7BEE200475586 /* UIButton+ZCQuickCreateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZCQuickCreateButton.h"; sourceTree = "<group>"; };
 		4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZCQuickCreateButton.m"; sourceTree = "<group>"; };
 		4C9B47931BDE06CB0030B947 /* ZCCitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCitiesTableViewController.h; sourceTree = "<group>"; };
@@ -211,8 +208,6 @@
 			children = (
 				4C6B33D31BD7BA0F00475586 /* ZCCustomTabBar.h */,
 				4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */,
-				4C6B33D61BD7BE0400475586 /* ZCCustomNavigation.h */,
-				4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */,
 			);
 			name = tabBarAndNavi;
 			sourceTree = "<group>";
@@ -555,7 +550,6 @@
 				4C3631871BDA566D0010C0CC /* ZCHttpRequestTool.m in Sources */,
 				4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */,
 				4CDBCB811BD789B900310898 /* main.m in Sources */,
-				4C6B33D81BD7BE0400475586 /* ZCCustomNavigation.m in Sources */,
 				4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */,
 				4CF8DB4E1BD8909C006853CB /* ZCItemModel.m in Sources */,
 				4CF8DB511BD8B396006853CB /* ZCSectionModel.m in Sources */,

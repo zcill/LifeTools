@@ -12,30 +12,26 @@
 #import "CSStickyHeaderFlowLayout.h"
 #import "ZCMainCollectionViewController.h"
 #import "ZCRootViewController.h"
-#import "ZCCustomNavigation.h"
 
 @interface ZCCustomTabBar ()
-
+{
+    UIImageView *imageView;
+}
 @property (nonatomic, weak) ZCMainCollectionViewController *main;
 
 @end
 
 @implementation ZCCustomTabBar
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    for (UIView *child in self.tabBar.subviews) {
-        if ([child isKindOfClass:[UIControl class]]) {
-            [child removeFromSuperview];
-        }
-    }
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self customTabBar];
     [self setupAllSubViewControllers];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [imageView setHidden:YES];
 }
 
 #pragma mark - 定制TabBar
@@ -46,7 +42,7 @@
     
     /*自定义的tabBar由ImageView+buttons组成*/
     //创建一个图片视图
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, ScreenHeight - TabBarHeight, ScreenWidth, TabBarHeight)];
+    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, ScreenHeight - TabBarHeight, ScreenWidth, TabBarHeight)];
     imageView.backgroundColor = [UIColor whiteColor];
     imageView.layer.borderColor = [UIColor flatWhiteColor].CGColor;
     imageView.layer.borderWidth = 0.3;
@@ -83,7 +79,7 @@
     imageView.userInteractionEnabled = YES;
     
     [self.view addSubview:imageView];
-    
+
 }
 
 - (void)onClick:(UIButton *)button
@@ -146,12 +142,9 @@
     
     childController.title = title;
     
-//    ZCCustomNavigation *navi = [[ZCCustomNavigation alloc] initWithRootViewController:childController];
-    
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:childController];
     
     [self addChildViewController:navi];
-    
     
 }
 

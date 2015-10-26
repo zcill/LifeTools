@@ -37,27 +37,6 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
     return _sections;
 }
 
-- (void)initBarButtonItem {
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundImage:[UIImage imageNamed:@"navigation_locationicon"] forState:UIControlStateNormal];
-    button.frame = CGRectMake(0, 0, button.currentBackgroundImage.size.width, button.currentBackgroundImage.size.height);
-    [button addTarget:self action:@selector(selectCity) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    
-}
-
-// 选择城市
-- (void)selectCity {
-    
-    ZCCitiesTableViewController *cities = [[ZCCitiesTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    cities.delegate = self;
-    
-    [self.navigationController pushViewController:cities animated:YES];
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -87,6 +66,29 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
     [self addSectionSearch];
     [self addSectionCalculate];
     [self addSectionTicket];
+    
+}
+
+#pragma mark >>>>> 选择城市按钮相关 >>>>>
+
+- (void)initBarButtonItem {
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundImage:[UIImage imageNamed:@"navigation_locationicon"] forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, button.currentBackgroundImage.size.width, button.currentBackgroundImage.size.height);
+    [button addTarget:self action:@selector(selectCity) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+}
+
+// 选择城市
+- (void)selectCity {
+    
+    ZCCitiesTableViewController *cities = [[ZCCitiesTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    cities.delegate = self;
+    
+    [self.navigationController pushViewController:cities animated:YES];
     
 }
 
@@ -279,6 +281,5 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-
 
 @end
