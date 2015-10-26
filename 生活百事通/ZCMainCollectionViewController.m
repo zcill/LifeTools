@@ -56,7 +56,7 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
 //        city = @"南京";
 //    }
     // 加载天气
-    [self loadWeatherData:@"滁州"];
+    [self loadWeatherData:@"北京"];
     
     
     // 添加分组
