@@ -124,7 +124,7 @@
     // 设置垂直间距
     layout.minimumLineSpacing = 10;
     layout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0);
-    layout.parallaxHeaderReferenceSize = CGSizeMake(ScreenWidth, 200);
+    layout.parallaxHeaderReferenceSize = CGSizeMake(ScreenWidth, 165);
     layout.headerReferenceSize = CGSizeMake(200, 50);
     
     ZCMainCollectionViewController *main = [[ZCMainCollectionViewController alloc] initWithCollectionViewLayout:layout];
@@ -146,7 +146,10 @@
     
     childController.title = title;
     
-    ZCCustomNavigation *navi = [[ZCCustomNavigation alloc] initWithRootViewController:childController];
+//    ZCCustomNavigation *navi = [[ZCCustomNavigation alloc] initWithRootViewController:childController];
+    
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:childController];
+    
     [self addChildViewController:navi];
     
     

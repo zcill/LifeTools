@@ -17,8 +17,9 @@
 #import "ZCHeader.h"
 #import "ZCSearchHttpRequest.h"
 #import "ZCWeatherModel.h"
+#import "ZCCitiesTableViewController.h"
 
-@interface ZCMainCollectionViewController ()
+@interface ZCMainCollectionViewController ()<ZCCitiesTableViewControllerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *sections;
 @property (nonatomic, weak) ZCWeatherCell *weatherCell;
@@ -36,6 +37,27 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
     return _sections;
 }
 
+- (void)initBarButtonItem {
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundImage:[UIImage imageNamed:@"navigation_locationicon"] forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, button.currentBackgroundImage.size.width, button.currentBackgroundImage.size.height);
+    [button addTarget:self action:@selector(selectCity) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+}
+
+// 选择城市
+- (void)selectCity {
+    
+    ZCCitiesTableViewController *cities = [[ZCCitiesTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    cities.delegate = self;
+    
+    [self.navigationController pushViewController:cities animated:YES];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -44,27 +66,27 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
     
     self.collectionView.backgroundColor = RGBA(231, 231, 231, 1);
     
+    [self initBarButtonItem];
+    
 #warning 未完成 定位
     
     // 监听定位城市改变的通知
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationCity) name:@"location_City_Note" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationCity) name:@"location_City_Note" object:nil];
     
     // 读取当前城市
-//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//    NSString *city = [userDefaults objectForKey:@"currentCity"];
-//    if (!city) {
-//        city = @"南京";
-//    }
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *city = [userDefaults objectForKey:@"currentCity"];
+    if (!city) {
+        city = @"南京";
+    }
     // 加载天气
-    [self loadWeatherData:@"北京"];
+    [self loadWeatherData:city];
     
     
     // 添加分组
     [self addSectionSearch];
     [self addSectionCalculate];
     [self addSectionTicket];
-    
-
     
 }
 
@@ -103,6 +125,13 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:city forKey:@"currentCity"];
+    
+}
+
+- (void)didSelectCity:(NSString *)city {
+    
+    // 点击再次加载
+    [self loadWeatherData:city];
     
 }
 

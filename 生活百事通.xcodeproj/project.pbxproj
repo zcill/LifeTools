@@ -14,6 +14,13 @@
 		4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */; settings = {ASSET_TAGS = (); }; };
 		4C6B33D81BD7BE0400475586 /* ZCCustomNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */; settings = {ASSET_TAGS = (); }; };
 		4C6B33DB1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */; settings = {ASSET_TAGS = (); }; };
+		4C9B47951BDE06CB0030B947 /* ZCCitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B47941BDE06CB0030B947 /* ZCCitiesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4C9B479C1BDE09450030B947 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47961BDE09450030B947 /* Categories.plist */; settings = {ASSET_TAGS = (); }; };
+		4C9B479D1BDE09450030B947 /* Categoriesaaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47971BDE09450030B947 /* Categoriesaaa.plist */; settings = {ASSET_TAGS = (); }; };
+		4C9B479E1BDE09450030B947 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47981BDE09450030B947 /* Cities.plist */; settings = {ASSET_TAGS = (); }; };
+		4C9B479F1BDE09450030B947 /* Currency.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47991BDE09450030B947 /* Currency.plist */; settings = {ASSET_TAGS = (); }; };
+		4C9B47A01BDE09450030B947 /* Orders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479A1BDE09450030B947 /* Orders.plist */; settings = {ASSET_TAGS = (); }; };
+		4C9B47A11BDE09450030B947 /* ProvincesAndCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479B1BDE09450030B947 /* ProvincesAndCities.plist */; settings = {ASSET_TAGS = (); }; };
 		4CB141651BDA24E40060F5A5 /* ZCWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */; settings = {ASSET_TAGS = (); }; };
 		4CDBCB811BD789B900310898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB801BD789B900310898 /* main.m */; };
 		4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB831BD789B900310898 /* AppDelegate.m */; };
@@ -67,6 +74,14 @@
 		4C6B33D71BD7BE0400475586 /* ZCCustomNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCustomNavigation.m; sourceTree = "<group>"; };
 		4C6B33D91BD7BEE200475586 /* UIButton+ZCQuickCreateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZCQuickCreateButton.h"; sourceTree = "<group>"; };
 		4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZCQuickCreateButton.m"; sourceTree = "<group>"; };
+		4C9B47931BDE06CB0030B947 /* ZCCitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCitiesTableViewController.h; sourceTree = "<group>"; };
+		4C9B47941BDE06CB0030B947 /* ZCCitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCitiesTableViewController.m; sourceTree = "<group>"; };
+		4C9B47961BDE09450030B947 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
+		4C9B47971BDE09450030B947 /* Categoriesaaa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categoriesaaa.plist; sourceTree = "<group>"; };
+		4C9B47981BDE09450030B947 /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
+		4C9B47991BDE09450030B947 /* Currency.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Currency.plist; sourceTree = "<group>"; };
+		4C9B479A1BDE09450030B947 /* Orders.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Orders.plist; sourceTree = "<group>"; };
+		4C9B479B1BDE09450030B947 /* ProvincesAndCities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProvincesAndCities.plist; sourceTree = "<group>"; };
 		4CB141631BDA24E40060F5A5 /* ZCWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWeatherModel.h; sourceTree = "<group>"; };
 		4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWeatherModel.m; sourceTree = "<group>"; };
 		4CDBCB7C1BD789B900310898 /* 生活百事通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "生活百事通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +257,12 @@
 		4CDBCB7F1BD789B900310898 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C9B47961BDE09450030B947 /* Categories.plist */,
+				4C9B47971BDE09450030B947 /* Categoriesaaa.plist */,
+				4C9B47981BDE09450030B947 /* Cities.plist */,
+				4C9B47991BDE09450030B947 /* Currency.plist */,
+				4C9B479A1BDE09450030B947 /* Orders.plist */,
+				4C9B479B1BDE09450030B947 /* ProvincesAndCities.plist */,
 				4CDBCB801BD789B900310898 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -280,6 +301,8 @@
 			children = (
 				4CF8DB3B1BD886D0006853CB /* ZCMainCollectionViewController.h */,
 				4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */,
+				4C9B47931BDE06CB0030B947 /* ZCCitiesTableViewController.h */,
+				4C9B47941BDE06CB0030B947 /* ZCCitiesTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -444,11 +467,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF8DC351BD919B7006853CB /* Assets.xcassets in Resources */,
+				4C9B479F1BDE09450030B947 /* Currency.plist in Resources */,
+				4C9B47A01BDE09450030B947 /* Orders.plist in Resources */,
 				4CF8DB591BD8C81A006853CB /* ZCHeaderViewCell.xib in Resources */,
+				4C9B479C1BDE09450030B947 /* Categories.plist in Resources */,
 				4CDBCB8F1BD789B900310898 /* LaunchScreen.storyboard in Resources */,
 				4CDBCB8A1BD789B900310898 /* Main.storyboard in Resources */,
+				4C9B479E1BDE09450030B947 /* Cities.plist in Resources */,
 				4CF8DB421BD88949006853CB /* ZCWeatherCell.xib in Resources */,
+				4C9B479D1BDE09450030B947 /* Categoriesaaa.plist in Resources */,
 				4CF8DB4B1BD88F1B006853CB /* ZCItemCell.xib in Resources */,
+				4C9B47A11BDE09450030B947 /* ProvincesAndCities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +567,7 @@
 				4CF8DB581BD8C81A006853CB /* ZCHeaderViewCell.m in Sources */,
 				4C6B33DB1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m in Sources */,
 				4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */,
+				4C9B47951BDE06CB0030B947 /* ZCCitiesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +712,7 @@
 				INFOPLIST_FILE = "生活百事通/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zcill.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcill.lifeTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -695,7 +725,7 @@
 				INFOPLIST_FILE = "生活百事通/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zcill.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcill.lifeTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -8,8 +8,9 @@
 
 #import "ZCCustomNavigation.h"
 #import "ZCHeader.h"
+#import "ZCCitiesTableViewController.h"
 
-@interface ZCCustomNavigation ()
+@interface ZCCustomNavigation ()<ZCCitiesTableViewControllerDelegate>
 
 @end
 
@@ -41,13 +42,13 @@
     
     // 设置定位按钮
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    CGFloat buttonX = 5.f;
+    CGFloat buttonX = ScreenWidth - (5+49);
     CGFloat buttonY = labelY;
     CGFloat buttonW = 49.f;
     CGFloat buttonH = labelH;
     leftButton.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
     [leftButton setImage:[UIImage imageNamed:@"navigation_locationicon"] forState:UIControlStateNormal];
-    [leftButton addTarget:self action:@selector(selectCity:) forControlEvents:UIControlEventTouchUpInside];
+    [leftButton addTarget:self action:@selector(selectCity) forControlEvents:UIControlEventTouchUpInside];
     
     [naviView addSubview:leftButton];
     
@@ -55,9 +56,19 @@
 }
 
 // 选择城市
-- (void)selectCity:(UIButton *)button {
+- (void)selectCity {
     
-#warning 未实现选择城市的功能
+    ZCCitiesTableViewController *cities = [[ZCCitiesTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    cities.delegate = self;
+    
+    [self pushViewController:cities animated:YES];
+    
+}
+
+#pragma mark >>>>>>>> ZCCitiesTableViewController代理方法 >>>>>>>>
+- (void)didSelectCity:(NSString *)city {
+    
+    
     
 }
 
