@@ -6,14 +6,14 @@
 //  Copyright © 2015年 zcill. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "ZCAppDelegate.h"
 #import "ZCCustomTabBar.h"
 
-@interface AppDelegate ()
+@interface ZCAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation ZCAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

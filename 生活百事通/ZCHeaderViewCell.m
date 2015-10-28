@@ -7,11 +7,14 @@
 //
 
 #import "ZCHeaderViewCell.h"
+#import <ChameleonFramework/Chameleon.h>
 
 @implementation ZCHeaderViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    
+    self.backgroundColor = FlatWatermelon;
+    
 }
 
 @end

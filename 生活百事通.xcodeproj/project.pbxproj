@@ -22,7 +22,7 @@
 		4C9B47A11BDE09450030B947 /* ProvincesAndCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479B1BDE09450030B947 /* ProvincesAndCities.plist */; };
 		4CB141651BDA24E40060F5A5 /* ZCWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */; };
 		4CDBCB811BD789B900310898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB801BD789B900310898 /* main.m */; };
-		4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB831BD789B900310898 /* AppDelegate.m */; };
+		4CDBCB841BD789B900310898 /* ZCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB831BD789B900310898 /* ZCAppDelegate.m */; };
 		4CDBCB8A1BD789B900310898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB881BD789B900310898 /* Main.storyboard */; };
 		4CDBCB8F1BD789B900310898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB8D1BD789B900310898 /* LaunchScreen.storyboard */; };
 		4CDBCB9A1BD789B900310898 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB991BD789B900310898 /* _____Tests.m */; };
@@ -83,8 +83,8 @@
 		4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWeatherModel.m; sourceTree = "<group>"; };
 		4CDBCB7C1BD789B900310898 /* 生活百事通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "生活百事通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDBCB801BD789B900310898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CDBCB821BD789B900310898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4CDBCB831BD789B900310898 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CDBCB821BD789B900310898 /* ZCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCAppDelegate.h; sourceTree = "<group>"; };
+		4CDBCB831BD789B900310898 /* ZCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCAppDelegate.m; sourceTree = "<group>"; };
 		4CDBCB891BD789B900310898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CDBCB8E1BD789B900310898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CDBCB901BD789B900310898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,8 +184,8 @@
 		4C6B33C21BD7964B00475586 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				4CDBCB821BD789B900310898 /* AppDelegate.h */,
-				4CDBCB831BD789B900310898 /* AppDelegate.m */,
+				4CDBCB821BD789B900310898 /* ZCAppDelegate.h */,
+				4CDBCB831BD789B900310898 /* ZCAppDelegate.m */,
 				4CDBCB881BD789B900310898 /* Main.storyboard */,
 				4CF8DC341BD919B7006853CB /* Assets.xcassets */,
 				4CDBCB8D1BD789B900310898 /* LaunchScreen.storyboard */,
@@ -548,7 +548,7 @@
 				4CF8DB3D1BD886D0006853CB /* ZCMainCollectionViewController.m in Sources */,
 				4CF8DB601BD8D130006853CB /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				4C3631871BDA566D0010C0CC /* ZCHttpRequestTool.m in Sources */,
-				4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */,
+				4CDBCB841BD789B900310898 /* ZCAppDelegate.m in Sources */,
 				4CDBCB811BD789B900310898 /* main.m in Sources */,
 				4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */,
 				4CF8DB4E1BD8909C006853CB /* ZCItemModel.m in Sources */,

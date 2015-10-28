@@ -42,6 +42,21 @@
     self.weatherImageView.image = [UIImage imageNamed:weather];
     self.weatherLabel.text = weatherData[@"weather"];
 
+    // 定位到“(”的位置
+    NSString *nowTempDate = weatherData[@"date"];
+    NSString *nowTemp = nil;
+    NSInteger stringLocation = [nowTempDate rangeOfString:@"："].location;
+    if (stringLocation != NSNotFound) {
+        nowTempDate = [nowTempDate substringFromIndex:stringLocation];
+        NSInteger dateLocation = [nowTempDate rangeOfString:@")"].location;
+        nowTemp = [nowTempDate substringToIndex:dateLocation];
+    }
+    // 判断是否存在实时温度数据
+    if (nowTemp) {
+        self.nowTemp.text = [NSString stringWithFormat:@"实时%@", nowTemp];
+    } else {
+        self.nowTemp.text = [NSString stringWithFormat:@"实时："];
+    }
     
 }
  
