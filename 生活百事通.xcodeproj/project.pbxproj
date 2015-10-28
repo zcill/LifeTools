@@ -8,37 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		3E05AC1E350C813C53788DBF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CC5733144DC4C456482F5 /* libPods.a */; };
-		4C3631871BDA566D0010C0CC /* ZCHttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */; settings = {ASSET_TAGS = (); }; };
-		4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631891BDA5ECC0010C0CC /* ZCSearchHttpRequest.m */; settings = {ASSET_TAGS = (); }; };
+		4C3631871BDA566D0010C0CC /* ZCHttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */; };
+		4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631891BDA5ECC0010C0CC /* ZCSearchHttpRequest.m */; };
 		4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33C41BD7967F00475586 /* ZCRootViewController.m */; };
-		4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */; settings = {ASSET_TAGS = (); }; };
-		4C6B33DB1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */; settings = {ASSET_TAGS = (); }; };
-		4C9B47951BDE06CB0030B947 /* ZCCitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B47941BDE06CB0030B947 /* ZCCitiesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		4C9B479C1BDE09450030B947 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47961BDE09450030B947 /* Categories.plist */; settings = {ASSET_TAGS = (); }; };
-		4C9B479D1BDE09450030B947 /* Categoriesaaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47971BDE09450030B947 /* Categoriesaaa.plist */; settings = {ASSET_TAGS = (); }; };
-		4C9B479E1BDE09450030B947 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47981BDE09450030B947 /* Cities.plist */; settings = {ASSET_TAGS = (); }; };
-		4C9B479F1BDE09450030B947 /* Currency.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47991BDE09450030B947 /* Currency.plist */; settings = {ASSET_TAGS = (); }; };
-		4C9B47A01BDE09450030B947 /* Orders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479A1BDE09450030B947 /* Orders.plist */; settings = {ASSET_TAGS = (); }; };
-		4C9B47A11BDE09450030B947 /* ProvincesAndCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479B1BDE09450030B947 /* ProvincesAndCities.plist */; settings = {ASSET_TAGS = (); }; };
-		4CB141651BDA24E40060F5A5 /* ZCWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */; settings = {ASSET_TAGS = (); }; };
+		4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33D41BD7BA0F00475586 /* ZCCustomTabBar.m */; };
+		4C6B33DB1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */; };
+		4C9B47951BDE06CB0030B947 /* ZCCitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B47941BDE06CB0030B947 /* ZCCitiesTableViewController.m */; };
+		4C9B479C1BDE09450030B947 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47961BDE09450030B947 /* Categories.plist */; };
+		4C9B479D1BDE09450030B947 /* Categoriesaaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47971BDE09450030B947 /* Categoriesaaa.plist */; };
+		4C9B479E1BDE09450030B947 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47981BDE09450030B947 /* Cities.plist */; };
+		4C9B479F1BDE09450030B947 /* Currency.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B47991BDE09450030B947 /* Currency.plist */; };
+		4C9B47A01BDE09450030B947 /* Orders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479A1BDE09450030B947 /* Orders.plist */; };
+		4C9B47A11BDE09450030B947 /* ProvincesAndCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B479B1BDE09450030B947 /* ProvincesAndCities.plist */; };
+		4CB141651BDA24E40060F5A5 /* ZCWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB141641BDA24E40060F5A5 /* ZCWeatherModel.m */; };
 		4CDBCB811BD789B900310898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB801BD789B900310898 /* main.m */; };
 		4CDBCB841BD789B900310898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB831BD789B900310898 /* AppDelegate.m */; };
 		4CDBCB8A1BD789B900310898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB881BD789B900310898 /* Main.storyboard */; };
 		4CDBCB8F1BD789B900310898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB8D1BD789B900310898 /* LaunchScreen.storyboard */; };
 		4CDBCB9A1BD789B900310898 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB991BD789B900310898 /* _____Tests.m */; };
 		4CDBCBA51BD789B900310898 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCBA41BD789B900310898 /* _____UITests.m */; };
-		4CF8DB3D1BD886D0006853CB /* ZCMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB411BD88949006853CB /* ZCWeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB3F1BD88949006853CB /* ZCWeatherCell.m */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB421BD88949006853CB /* ZCWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DB401BD88949006853CB /* ZCWeatherCell.xib */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB4A1BD88F1B006853CB /* ZCItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB481BD88F1B006853CB /* ZCItemCell.m */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB4B1BD88F1B006853CB /* ZCItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DB491BD88F1B006853CB /* ZCItemCell.xib */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB4E1BD8909C006853CB /* ZCItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB4D1BD8909C006853CB /* ZCItemModel.m */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB511BD8B396006853CB /* ZCSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB501BD8B396006853CB /* ZCSectionModel.m */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB581BD8C81A006853CB /* ZCHeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB561BD8C81A006853CB /* ZCHeaderViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB591BD8C81A006853CB /* ZCHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DB571BD8C81A006853CB /* ZCHeaderViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB5F1BD8D130006853CB /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB5C1BD8D130006853CB /* CSStickyHeaderFlowLayout.m */; settings = {ASSET_TAGS = (); }; };
-		4CF8DB601BD8D130006853CB /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB5E1BD8D130006853CB /* CSStickyHeaderFlowLayoutAttributes.m */; settings = {ASSET_TAGS = (); }; };
-		4CF8DC351BD919B7006853CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DC341BD919B7006853CB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		4CF8DB3D1BD886D0006853CB /* ZCMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */; };
+		4CF8DB411BD88949006853CB /* ZCWeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB3F1BD88949006853CB /* ZCWeatherCell.m */; };
+		4CF8DB421BD88949006853CB /* ZCWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DB401BD88949006853CB /* ZCWeatherCell.xib */; };
+		4CF8DB4A1BD88F1B006853CB /* ZCItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB481BD88F1B006853CB /* ZCItemCell.m */; };
+		4CF8DB4B1BD88F1B006853CB /* ZCItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DB491BD88F1B006853CB /* ZCItemCell.xib */; };
+		4CF8DB4E1BD8909C006853CB /* ZCItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB4D1BD8909C006853CB /* ZCItemModel.m */; };
+		4CF8DB511BD8B396006853CB /* ZCSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB501BD8B396006853CB /* ZCSectionModel.m */; };
+		4CF8DB581BD8C81A006853CB /* ZCHeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB561BD8C81A006853CB /* ZCHeaderViewCell.m */; };
+		4CF8DB591BD8C81A006853CB /* ZCHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DB571BD8C81A006853CB /* ZCHeaderViewCell.xib */; };
+		4CF8DB5F1BD8D130006853CB /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB5C1BD8D130006853CB /* CSStickyHeaderFlowLayout.m */; };
+		4CF8DB601BD8D130006853CB /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB5E1BD8D130006853CB /* CSStickyHeaderFlowLayoutAttributes.m */; };
+		4CF8DC351BD919B7006853CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DC341BD919B7006853CB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -708,6 +708,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcill.lifeTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -721,6 +722,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcill.lifeTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

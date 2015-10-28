@@ -124,17 +124,17 @@
     layout.headerReferenceSize = CGSizeMake(200, 50);
     
     ZCMainCollectionViewController *main = [[ZCMainCollectionViewController alloc] initWithCollectionViewLayout:layout];
-    [self addChildViewController:main title:nil];
+    [self addChildViewController:main title:@"生活"];
     self.main = main;
     
     ZCRootViewController *navi2 = [[ZCRootViewController alloc] init];
-    [self addChildViewController:navi2 title:nil];
+    [self addChildViewController:navi2 title:@"团购"];
     
     ZCRootViewController *navi3 = [[ZCRootViewController alloc] init];
-    [self addChildViewController:navi3 title:nil];
+    [self addChildViewController:navi3 title:@"工具"];
     
     ZCRootViewController *navi4 = [[ZCRootViewController alloc] init];
-    [self addChildViewController:navi4 title:nil];
+    [self addChildViewController:navi4 title:@"我的"];
     
 }
 

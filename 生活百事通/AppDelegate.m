@@ -7,11 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ZCHeader.h"
-#import "ZCRootViewController.h"
 #import "ZCCustomTabBar.h"
-#import "ZCMainCollectionViewController.h"
-#import "CSStickyHeaderFlowLayout.h"
 
 @interface AppDelegate ()
 
