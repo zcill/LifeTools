@@ -18,6 +18,7 @@
 #import "ZCSearchHttpRequest.h"
 #import "ZCWeatherModel.h"
 #import "ZCCitiesTableViewController.h"
+#import "ZCIDCardSearchTableViewController.h"
 
 @interface ZCMainCollectionViewController ()<ZCCitiesTableViewControllerDelegate>
 
@@ -163,7 +164,7 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
     
 #warning item的viewController未设置
     // 添加item
-    ZCItemModel *IDCardItem = [ZCItemModel itemWithTitle:@"身份证查询" icon:@"s3" destVcClass:[ZCRootViewController class]];
+    ZCItemModel *IDCardItem = [ZCItemModel itemWithTitle:@"身份证查询" icon:@"s3" destVcClass:[ZCIDCardSearchTableViewController class]];
     ZCItemModel *phoneItem = [ZCItemModel itemWithTitle:@"手机归属地" icon:@"a1" destVcClass:[ZCRootViewController class]];
     ZCItemModel *currencyItem = [ZCItemModel itemWithTitle:@"货币汇率" icon:@"a7" destVcClass:[ZCRootViewController class]];
     ZCItemModel *dreamItem = [ZCItemModel itemWithTitle:@"公交查询" icon:@"s4" destVcClass:[ZCRootViewController class]];

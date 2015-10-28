@@ -34,6 +34,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>REFormattedNumberField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RETableViewManager-RETableViewManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RETableViewManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>REValidation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,6 +67,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0CB07C5D9E610C8C213CE2579435FA93</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0E44717E0BD8FDC2D8BFA4C4E4AECCDA</key>
 		<dict>
 			<key>primary</key>
@@ -57,7 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>878D06D80B75F294E58B74EE9FD9C1BC</key>
+		<key>427438071F30A11F2BAE6E4D28604D99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6518D761BC0E39F7AA7703F691894ABE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80984133F393E81F5CC9B41A7BA72F1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E95636E552598BA6A9C9D3F6D4AFC97E</key>
+		<key>DD11AFD87934EDEFF4C5CED84DF6E42B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDAC9C4CA2805A2147D37F029541DF87</key>
+		<key>DFB9E50926ADFDB2A5819378A7580098</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5A5605B6F40F362E7EBA744172485B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

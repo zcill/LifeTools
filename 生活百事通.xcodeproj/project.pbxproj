@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3E05AC1E350C813C53788DBF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CC5733144DC4C456482F5 /* libPods.a */; };
+		4C14E9F21BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14E9F11BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.m */; };
+		4C14EAE41BE0F1F300B2C4CB /* ZCSubtitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14EAE31BE0F1F300B2C4CB /* ZCSubtitleItem.m */; };
 		4C3631871BDA566D0010C0CC /* ZCHttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */; };
 		4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3631891BDA5ECC0010C0CC /* ZCSearchHttpRequest.m */; };
 		4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B33C41BD7967F00475586 /* ZCRootViewController.m */; };
@@ -60,6 +62,10 @@
 
 /* Begin PBXFileReference section */
 		251DFC58E0597ADDE2A5A462 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4C14E9F01BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCIDCardSearchTableViewController.h; sourceTree = "<group>"; };
+		4C14E9F11BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCIDCardSearchTableViewController.m; sourceTree = "<group>"; };
+		4C14EAE21BE0F1F300B2C4CB /* ZCSubtitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSubtitleItem.h; sourceTree = "<group>"; };
+		4C14EAE31BE0F1F300B2C4CB /* ZCSubtitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSubtitleItem.m; sourceTree = "<group>"; };
 		4C3631851BDA566D0010C0CC /* ZCHttpRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCHttpRequestTool.h; path = "生活百事通/ZCHttpRequestTool.h"; sourceTree = "<group>"; };
 		4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCHttpRequestTool.m; path = "生活百事通/ZCHttpRequestTool.m"; sourceTree = "<group>"; };
 		4C3631881BDA5ECC0010C0CC /* ZCSearchHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSearchHttpRequest.h; sourceTree = "<group>"; };
@@ -152,6 +158,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C14E9EE1BE0C20000B2C4CB /* 主页面 */ = {
+			isa = PBXGroup;
+			children = (
+				4CF8DB3B1BD886D0006853CB /* ZCMainCollectionViewController.h */,
+				4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */,
+				4C9B47931BDE06CB0030B947 /* ZCCitiesTableViewController.h */,
+				4C9B47941BDE06CB0030B947 /* ZCCitiesTableViewController.m */,
+			);
+			name = "主页面";
+			sourceTree = "<group>";
+		};
+		4C14E9EF1BE0C21400B2C4CB /* 查询 */ = {
+			isa = PBXGroup;
+			children = (
+				4C14E9F01BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.h */,
+				4C14E9F11BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.m */,
+			);
+			name = "查询";
+			sourceTree = "<group>";
+		};
+		4C14EAE11BE0F1C800B2C4CB /* ZC */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B33C91BD7B6CD00475586 /* ZCHeader.h */,
+				4C6B33D91BD7BEE200475586 /* UIButton+ZCQuickCreateButton.h */,
+				4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */,
+				4C3631851BDA566D0010C0CC /* ZCHttpRequestTool.h */,
+				4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */,
+				4C14EAE21BE0F1F300B2C4CB /* ZCSubtitleItem.h */,
+				4C14EAE31BE0F1F300B2C4CB /* ZCSubtitleItem.m */,
+			);
+			name = ZC;
+			sourceTree = "<group>";
+		};
 		4C3631841BDA55B00010C0CC /* Public(公用) */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,11 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				4CF8DB5A1BD8D130006853CB /* CSStickyHeaderFlowLayout */,
-				4C6B33C91BD7B6CD00475586 /* ZCHeader.h */,
-				4C6B33D91BD7BEE200475586 /* UIButton+ZCQuickCreateButton.h */,
-				4C6B33DA1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m */,
-				4C3631851BDA566D0010C0CC /* ZCHttpRequestTool.h */,
-				4C3631861BDA566D0010C0CC /* ZCHttpRequestTool.m */,
+				4C14EAE11BE0F1C800B2C4CB /* ZC */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -294,10 +330,8 @@
 		4CF8DB521BD8C79F006853CB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4CF8DB3B1BD886D0006853CB /* ZCMainCollectionViewController.h */,
-				4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */,
-				4C9B47931BDE06CB0030B947 /* ZCCitiesTableViewController.h */,
-				4C9B47941BDE06CB0030B947 /* ZCCitiesTableViewController.m */,
+				4C14E9EE1BE0C20000B2C4CB /* 主页面 */,
+				4C14E9EF1BE0C21400B2C4CB /* 查询 */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -559,9 +593,11 @@
 				4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */,
 				4CF8DB411BD88949006853CB /* ZCWeatherCell.m in Sources */,
 				4CF8DB581BD8C81A006853CB /* ZCHeaderViewCell.m in Sources */,
+				4C14EAE41BE0F1F300B2C4CB /* ZCSubtitleItem.m in Sources */,
 				4C6B33DB1BD7BEE200475586 /* UIButton+ZCQuickCreateButton.m in Sources */,
 				4C6B33C51BD7967F00475586 /* ZCRootViewController.m in Sources */,
 				4C9B47951BDE06CB0030B947 /* ZCCitiesTableViewController.m in Sources */,
+				4C14E9F21BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

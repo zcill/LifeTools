@@ -11,7 +11,14 @@
 
 @interface ZCSearchHttpRequest : NSObject
 
-// 获取天气数据
+/**
+ 获取天气数据
+ */
 + (void)getWeatherDataWithCity:(NSString *)city success:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock;
+
+/**
+ 获取身份证数据
+ */
++ (void)getIDCardDataWithIDCardNumber:(NSString *)IDCardNumber success:(void (^)(id))successBlock failure:(void (^)(NSError *))failureBlock;
 
 @end
