@@ -21,7 +21,7 @@
 
 - (instancetype)init
 {
-    self = [super init];
+    self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
     
     }
@@ -32,6 +32,8 @@
     [super viewDidLoad];
     
     self.title = @"国内身份证查询验证";
+    
+//    self.view.backgroundColor = RGBA(231, 231, 231, 1);
     
     self.manager = [[RETableViewManager alloc] initWithTableView:self.tableView];
     self.manager.style.cellHeight = 36;
@@ -87,8 +89,6 @@
             // 查询数据
             [weakSelf getIDCardData:IDCardItem.value];
             [SVProgressHUD showWithStatus:@"查询中..."];
-        } else {
-            [SVProgressHUD showErrorWithStatus:@"请输入号码"];
         }
         
         // item取消选择
@@ -140,10 +140,10 @@
             NSString *region = [NSString stringWithFormat:@"地区:\t%@%@%@", resultDict[@"province"], resultDict[@"city"], resultDict[@"town"]];
             [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:region]];
             
-        } else if (status.integerValue == 203){
+        } else if (status.integerValue == 203 || status.integerValue == 202){
             [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:@"查询失败，可能是身份证号码输入有误"]];
-        } else if () {
-            
+        } else if (status.integerValue == 201) {
+            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:@"查询失败，身份证号码不能为空"]];
         }
         
         // 重新加载section
