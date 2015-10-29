@@ -20,6 +20,8 @@
 #define searchAppKey @"e810896de40995b7"
 #define IPAPP_KEY @"1307ee261de8bbcf83830de89caae73f"
 
+#define CurrencyURL @"http://api.jisuapi.com/exchange/convert?"
+
 @implementation ZCSearchHttpRequest
 
 + (void)getWeatherDataWithCity:(NSString *)city success:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock {
@@ -101,6 +103,27 @@
         }
     }];
     
+}
+
++ (void)getCurrencyDataWithFrom:(NSString *)from to:(NSString *)to amount:(NSString *)amount success:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock {
+    
+    // 设置请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"from"] = from;
+    params[@"to"] = to;
+    params[@"amount"] = amount;
+    params[@"appkey"] = searchAppKey;
+    
+    // 请求
+    [ZCHttpRequestTool getWithURL:CurrencyURL params:params success:^(id JSON) {
+        if (successBlock) {
+            successBlock(JSON);
+        }
+    } failure:^(NSError *error) {
+        if (failureBlock) {
+            failureBlock(error);
+        }
+    }];
     
 }
 
