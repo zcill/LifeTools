@@ -13,8 +13,12 @@
 #define WeatherURL @"http://api.map.baidu.com/telematics/v3/weather?"
 //#define IDCardURL @"http://api.46644.com/idcard?"
 #define IDCardURL @"http://api.jisuapi.com/idcard/query?"
+#define PhoneNumberURL @"http://api.jisuapi.com/shouji/query?"
+//#define IPURL @"http://api.jisuapi.com/ip/location?"
+#define IPURL @"http://api.46644.com/ip/?"
 #define baiduAppID @"9suGmKvdlUGlSGGRrkQLD108"
 #define searchAppKey @"e810896de40995b7"
+#define IPAPP_KEY @"1307ee261de8bbcf83830de89caae73f"
 
 @implementation ZCSearchHttpRequest
 
@@ -58,5 +62,48 @@
     }];
     
 }
+
++ (void)getPhoneNumberDataWithPhoneNumber:(NSString *)phoneNumber success:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock {
+    
+    // 设置请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"shouji"] = phoneNumber;
+    params[@"appkey"] = searchAppKey;
+    
+    // 请求
+    [ZCHttpRequestTool getWithURL:PhoneNumberURL params:params success:^(id JSON) {
+        if (successBlock) {
+            successBlock(JSON);
+        }
+    } failure:^(NSError *error) {
+        if (failureBlock) {
+            failureBlock(error);
+        }
+    }];
+    
+}
+
++ (void)getIPDataWithIPNumber:(NSString *)IPNumber succuss:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock {
+    
+    // 设置请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"ip"] = IPNumber;
+    params[@"appkey"] = IPAPP_KEY;
+    
+    // 请求
+    [ZCHttpRequestTool getWithURL:IPURL params:params success:^(id JSON) {
+        if (successBlock) {
+            successBlock(JSON);
+        }
+    } failure:^(NSError *error) {
+        if (failureBlock) {
+            failureBlock(error);
+        }
+    }];
+    
+    
+}
+
+
 
 @end

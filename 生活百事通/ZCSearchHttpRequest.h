@@ -21,4 +21,15 @@
  */
 + (void)getIDCardDataWithIDCardNumber:(NSString *)IDCardNumber success:(void (^)(id))successBlock failure:(void (^)(NSError *))failureBlock;
 
+/**
+ 获取手机归属地数据
+ */
++ (void)getPhoneNumberDataWithPhoneNumber:(NSString *)phoneNumber success:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock;
+
+
+/*
+ 获取IP地址数据
+ */
++ (void)getIPDataWithIPNumber:(NSString *)IPNumber succuss:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock;
+
 @end

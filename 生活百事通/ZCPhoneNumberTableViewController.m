@@ -1,29 +1,29 @@
 //
-//  ZCIDCardSearchTableViewController.m
+//  ZCPhoneNumberTableViewController.m
 //  生活百事通
 //
-//  Created by 朱立焜 on 15/10/28.
+//  Created by 朱立焜 on 15/10/29.
 //  Copyright © 2015年 zcill. All rights reserved.
 //
 
-#import "ZCIDCardSearchTableViewController.h"
+#import "ZCPhoneNumberTableViewController.h"
 #import "ZCHeader.h"
 
-@interface ZCIDCardSearchTableViewController ()
+@interface ZCPhoneNumberTableViewController ()
 
 @property (nonatomic, strong) RETableViewManager *manager;
 @property (nonatomic, strong) RETableViewSection *resultSection;
-@property (nonatomic, strong) RETableViewSection *IDCardSection;
+@property (nonatomic, strong) RETableViewSection *phoneNumberSection;
 
 @end
 
-@implementation ZCIDCardSearchTableViewController
+@implementation ZCPhoneNumberTableViewController
 
 - (instancetype)init
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-    
+        
     }
     return self;
 }
@@ -31,9 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"国内身份证查询验证";
-    
-//    self.view.backgroundColor = RGBA(231, 231, 231, 1);
+    self.title = @"国内手机归属地查询";
     
     self.manager = [[RETableViewManager alloc] initWithTableView:self.tableView];
     self.manager.style.cellHeight = 36;
@@ -49,20 +47,20 @@
 // 添加第一个section
 - (void)addSectionSearch {
     
-    UIImage *image = [UIImage imageNamed:@"s3"];
+    UIImage *image = [UIImage imageNamed:@"a1"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.bounds = CGRectMake(0, 0, self.view.frame.size.width, 100);
     imageView.contentMode = UIViewContentModeCenter;
     
     // 添加头部视图
-    RETableViewSection *IDCardSection = [RETableViewSection sectionWithHeaderView:imageView];
-    IDCardSection.footerTitle = @"身份证查询系统，可以查询户口所在地和性别。请勿用于非法途径!";
+    RETableViewSection *phoneNumberSection = [RETableViewSection sectionWithHeaderView:imageView];
+    phoneNumberSection.footerTitle = @"手机归属地查询系统，可以查询中国移动、中国联通、中国电信手机号段归属地信息";
     
-    [self.manager addSection:IDCardSection];
-    self.IDCardSection = IDCardSection;
+    [self.manager addSection:phoneNumberSection];
+    self.phoneNumberSection = phoneNumberSection;
     
-    RETextItem *IDCardItem = [RETextItem itemWithTitle:@"身份证号码:" value:nil placeholder:@"请输入身份证号码"];
-    [IDCardSection addItem:IDCardItem];
+    RETextItem *phoneNumber = [RETextItem itemWithTitle:@"手机号码:" value:nil placeholder:@"请输入手机号码"];
+    [phoneNumberSection addItem:phoneNumber];
     
 }
 
@@ -83,11 +81,11 @@
     RETableViewItem *buttonItem = [RETableViewItem itemWithTitle:@"查询" accessoryType:UITableViewCellAccessoryNone selectionHandler:^(RETableViewItem *item) {
         
         // 读取item数据
-        RETextItem *IDCardItem = weakSelf.IDCardSection.items[0];
+        RETextItem *phoneNumberItem = weakSelf.phoneNumberSection.items[0];
         
-        if (IDCardItem.value) {
+        if (phoneNumberItem.value) {
             // 查询数据
-            [weakSelf getIDCardData:IDCardItem.value];
+            [weakSelf getPhoneNumberData:phoneNumberItem.value];
             [SVProgressHUD showWithStatus:@"查询中..."];
         }
         
@@ -100,19 +98,23 @@
 }
 
 /*
- birth = "1995\U5e7403\U670820\U65e5";
- city = "\U6ec1\U5dde\U5e02";
- lastflag = 0;
- province = "\U5b89\U5fbd\U7701";
- sex = "\U7537";
- town = "\U6765\U5b89\U53bf";
+ {
+ "msg" : "ok",
+ "result" : {
+ "cardtype" : "GSM",
+ "city" : "鍗楁槍",
+ "company" : "涓浗绉诲姩",
+ "province" : "姹熻タ"
+ },
+ "status" : "0"
+ }
  */
 
 // 查询数据
-- (void)getIDCardData:(NSString *)IDCard {
+- (void)getPhoneNumberData:(NSString *)phoneNumber {
     
     __typeof (self) __weak weakSelf = self;
-    [ZCSearchHttpRequest getIDCardDataWithIDCardNumber:IDCard success:^(id JSON) {
+    [ZCSearchHttpRequest getPhoneNumberDataWithPhoneNumber:phoneNumber success:^(id JSON) {
         NSLog(@"%@", JSON);
         
         NSDictionary *dic = JSON;
@@ -128,22 +130,22 @@
         // 是否成功
         if ([msg isEqualToString:@"ok"]) {
             
-            // 生日
-            NSString *birth = [NSString stringWithFormat:@"生日:\t%@", resultDict[@"birth"]];
-            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:birth]];
+            // 运营商
+            NSString *company = [NSString stringWithFormat:@"运营商:\t%@", resultDict[@"company"]];
+            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:company]];
             
-            // 性别
-            NSString *sex = [NSString stringWithFormat:@"性别:\t%@", resultDict[@"sex"]];
-            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:sex]];
+            // 卡类别
+            NSString *cardtype = [NSString stringWithFormat:@"卡类别:\t%@", resultDict[@"cardtype"]];
+            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:cardtype]];
             
-            // 地区
-            NSString *region = [NSString stringWithFormat:@"地区:\t%@%@%@", resultDict[@"province"], resultDict[@"city"], resultDict[@"town"]];
+            // 归属地
+            NSString *region = [NSString stringWithFormat:@"归属地:\t%@%@", resultDict[@"province"], resultDict[@"city"]];
             [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:region]];
             
         } else if (status.integerValue == 203 || status.integerValue == 202){
-            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:@"查询失败，可能是身份证号码输入有误"]];
+            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:@"查询失败，可能是手机号码输入有误"]];
         } else if (status.integerValue == 201) {
-            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:@"查询失败，身份证号码不能为空"]];
+            [weakSelf.resultSection addItem:[RETableViewItem itemWithTitle:@"查询失败，手机号码不能为空"]];
         }
         
         // 重新加载section
@@ -160,12 +162,13 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 - (void)dealloc
 {
-    NSLog(@"ZCIDCardSearchTableViewController dealloc");
+    NSLog(@"ZCPhoneNumberTableViewCollection dealloc");
 }
+
 
 @end

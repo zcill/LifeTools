@@ -29,6 +29,8 @@
 		4CDBCB8F1BD789B900310898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBCB8D1BD789B900310898 /* LaunchScreen.storyboard */; };
 		4CDBCB9A1BD789B900310898 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCB991BD789B900310898 /* _____Tests.m */; };
 		4CDBCBA51BD789B900310898 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCBA41BD789B900310898 /* _____UITests.m */; };
+		4CEFB4CA1BE1AA67000CD045 /* ZCPhoneNumberTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFB4C91BE1AA67000CD045 /* ZCPhoneNumberTableViewController.m */; };
+		4CEFB5141BE1BCEC000CD045 /* ZCIPSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFB5131BE1BCEC000CD045 /* ZCIPSearchTableViewController.m */; };
 		4CF8DB3D1BD886D0006853CB /* ZCMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */; };
 		4CF8DB411BD88949006853CB /* ZCWeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8DB3F1BD88949006853CB /* ZCWeatherCell.m */; };
 		4CF8DB421BD88949006853CB /* ZCWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8DB401BD88949006853CB /* ZCWeatherCell.xib */; };
@@ -100,6 +102,10 @@
 		4CDBCBA01BD789B900310898 /* 生活百事通UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "生活百事通UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDBCBA41BD789B900310898 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		4CDBCBA61BD789B900310898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CEFB4C81BE1AA67000CD045 /* ZCPhoneNumberTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCPhoneNumberTableViewController.h; sourceTree = "<group>"; };
+		4CEFB4C91BE1AA67000CD045 /* ZCPhoneNumberTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCPhoneNumberTableViewController.m; sourceTree = "<group>"; };
+		4CEFB5121BE1BCEC000CD045 /* ZCIPSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCIPSearchTableViewController.h; sourceTree = "<group>"; };
+		4CEFB5131BE1BCEC000CD045 /* ZCIPSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCIPSearchTableViewController.m; sourceTree = "<group>"; };
 		4CF8DB3B1BD886D0006853CB /* ZCMainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMainCollectionViewController.h; sourceTree = "<group>"; };
 		4CF8DB3C1BD886D0006853CB /* ZCMainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMainCollectionViewController.m; sourceTree = "<group>"; };
 		4CF8DB3E1BD88949006853CB /* ZCWeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWeatherCell.h; sourceTree = "<group>"; };
@@ -174,6 +180,10 @@
 			children = (
 				4C14E9F01BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.h */,
 				4C14E9F11BE0C25C00B2C4CB /* ZCIDCardSearchTableViewController.m */,
+				4CEFB4C81BE1AA67000CD045 /* ZCPhoneNumberTableViewController.h */,
+				4CEFB4C91BE1AA67000CD045 /* ZCPhoneNumberTableViewController.m */,
+				4CEFB5121BE1BCEC000CD045 /* ZCIPSearchTableViewController.h */,
+				4CEFB5131BE1BCEC000CD045 /* ZCIPSearchTableViewController.m */,
 			);
 			name = "查询";
 			sourceTree = "<group>";
@@ -587,10 +597,12 @@
 				4C36318A1BDA5ECC0010C0CC /* ZCSearchHttpRequest.m in Sources */,
 				4CF8DB4E1BD8909C006853CB /* ZCItemModel.m in Sources */,
 				4CF8DB511BD8B396006853CB /* ZCSectionModel.m in Sources */,
+				4CEFB4CA1BE1AA67000CD045 /* ZCPhoneNumberTableViewController.m in Sources */,
 				4CF8DB5F1BD8D130006853CB /* CSStickyHeaderFlowLayout.m in Sources */,
 				4CB141651BDA24E40060F5A5 /* ZCWeatherModel.m in Sources */,
 				4CF8DB4A1BD88F1B006853CB /* ZCItemCell.m in Sources */,
 				4C6B33D51BD7BA0F00475586 /* ZCCustomTabBar.m in Sources */,
+				4CEFB5141BE1BCEC000CD045 /* ZCIPSearchTableViewController.m in Sources */,
 				4CF8DB411BD88949006853CB /* ZCWeatherCell.m in Sources */,
 				4CF8DB581BD8C81A006853CB /* ZCHeaderViewCell.m in Sources */,
 				4C14EAE41BE0F1F300B2C4CB /* ZCSubtitleItem.m in Sources */,
