@@ -22,6 +22,7 @@
 #import "ZCPhoneNumberTableViewController.h"
 #import "ZCIPSearchTableViewController.h"
 #import "ZCCurrencyTableViewController.h"
+#import "ZCBusTableViewController.h"
 
 @interface ZCMainCollectionViewController ()<ZCCitiesTableViewControllerDelegate>
 
@@ -166,12 +167,11 @@ static NSString * const reuseIdentifier = @"ZCItemCell";
     ZCSectionModel *section = [ZCSectionModel defaultSection];
     section.headerTitle = @"生活查询";
     
-#warning item的viewController未设置
     // 添加item
     ZCItemModel *IDCardItem = [ZCItemModel itemWithTitle:@"身份证查询" icon:@"s3" destVcClass:[ZCIDCardSearchTableViewController class]];
     ZCItemModel *phoneItem = [ZCItemModel itemWithTitle:@"手机归属地" icon:@"a1" destVcClass:[ZCPhoneNumberTableViewController class]];
     ZCItemModel *currencyItem = [ZCItemModel itemWithTitle:@"货币汇率" icon:@"a7" destVcClass:[ZCCurrencyTableViewController class]];
-    ZCItemModel *dreamItem = [ZCItemModel itemWithTitle:@"公交查询" icon:@"s4" destVcClass:[ZCRootViewController class]];
+    ZCItemModel *dreamItem = [ZCItemModel itemWithTitle:@"公交查询" icon:@"s4" destVcClass:[ZCBusTableViewController class]];
     ZCItemModel *IPItem = [ZCItemModel itemWithTitle:@"IP地址查询" icon:@"a5" destVcClass:[ZCIPSearchTableViewController class]];
     
     [section.items addObjectsFromArray:@[IDCardItem, phoneItem, currencyItem, dreamItem, IPItem]];

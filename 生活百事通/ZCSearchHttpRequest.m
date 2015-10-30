@@ -22,6 +22,9 @@
 
 #define CurrencyURL @"http://api.jisuapi.com/exchange/convert?"
 
+
+#define BusLineURL @"http://api.jisuapi.com/transit/line?"
+
 @implementation ZCSearchHttpRequest
 
 + (void)getWeatherDataWithCity:(NSString *)city success:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock {
@@ -116,6 +119,27 @@
     
     // 请求
     [ZCHttpRequestTool getWithURL:CurrencyURL params:params success:^(id JSON) {
+        if (successBlock) {
+            successBlock(JSON);
+        }
+    } failure:^(NSError *error) {
+        if (failureBlock) {
+            failureBlock(error);
+        }
+    }];
+    
+}
+
++ (void)getBusLineDataWithCityID:(NSString *)cityID transitno:(NSString *)transitno succuss:(void (^)(id JSON))successBlock failure:(void (^)(NSError *error))failureBlock {
+    
+    // 设置请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"cityid"] = cityID;
+    params[@"transitno"] = transitno;
+    params[@"appkey"] = searchAppKey;
+    
+    // 请求
+    [ZCHttpRequestTool getWithURL:BusLineURL params:params success:^(id JSON) {
         if (successBlock) {
             successBlock(JSON);
         }
