@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FC0D985C1F79A70120A1FFDB'
+               BlueprintIdentifier = '76C3B6965A64CB0984EA1086'
                BlueprintName = 'DAPagesContainer'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libDAPagesContainer.a'>
